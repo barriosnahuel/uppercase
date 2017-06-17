@@ -5,6 +5,11 @@
 $(document).ready(function () {
 
 	/**
+	 * @type {string} The selector to find all rows from the left side (all contacts).
+	 */
+	const CONTACT_SELECTOR = 'div.chat';
+
+	/**
 	 * @type {string} The selector used to find WhatsApp input
 	 */
 	const INPUT_SELECTOR = 'div.input';
@@ -23,22 +28,23 @@ $(document).ready(function () {
 	 */
 	const trySearch = function () {
 
-		/**
-		 * Move cursor/caret to the end of a DIV block marked as contenteditable=true
-		 * @param node
-		 */
-		const moveCaretToEnd = function (node) {
-			const range = document.createRange();
-			const selection = window.getSelection();
-			range.setStart(node.childNodes[0], node.childNodes.length);
-			range.collapse(true);
-			selection.removeAllRanges();
-			selection.addRange(range);
-		};
+		const setUppercase = function () {
+			const input = $(INPUT_SELECTOR);
+			input.bind('DOMSubtreeModified', function () {
 
-		const input = $(INPUT_SELECTOR);
-		if (input.get().length > 0) {
-			input.on("DOMSubtreeModified", function () {
+				/**
+				 * Move cursor/caret to the end of a DIV block marked as contenteditable=true
+				 * @param node
+				 */
+				const moveCaretToEnd = function (node) {
+					const range = document.createRange();
+					const selection = window.getSelection();
+					range.setStart(node.childNodes[0], node.childNodes.length);
+					range.collapse(true);
+					selection.removeAllRanges();
+					selection.addRange(range);
+				};
+
 				const content = $(this);
 				const value = content.text();
 				const valueAsAscii = value.charCodeAt(0);
@@ -50,6 +56,11 @@ $(document).ready(function () {
 					moveCaretToEnd(this);
 				}
 			});
+		};
+
+		const contacts = $(CONTACT_SELECTOR);
+		if (contacts.get().length > 0) {
+			contacts.click(setUppercase);
 		} else {
 			wait();
 		}
