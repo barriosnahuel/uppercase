@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Uppercase - WhatsApp with Capital letters",
     "short_name": "Uppercase",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Let your friends think you're on your phone but write them through the WhatsApp web client.",
     "page_action": {
         "default_icon": {
