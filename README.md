@@ -2,6 +2,10 @@
 
 This extension has one simple feature: it transform to uppercase the first letter of the message you're writing. This is useful to simulate that you're on your phone instead of your computer.
 
+## Installation
+
+Just click in "Add to Chrome" at the [Chrome Web Store](https://chrome.google.com/webstore/detail/uppercase-whatsapp-with-c/fmiegbpfdanilaobmfojhinjpcpknddb).
+
 ## Contributing
 
 ### Setup your Chrome
