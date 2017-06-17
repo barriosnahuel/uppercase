@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Uppercase - WhatsApp Capital letter",
+    "short_name": "Uppercase",
+    "version": "0.0.0",
+    "description": "Let your friends think you're on your phone but write them through the WhatsApp web client",
+    "page_action": {
+        "default_icon": {
+            "19": "img/megaphone-2-16.png",
+            "38": "img/megaphone-2-48.png"
+        },
+        "default_title": "Uppercase"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://web.whatsapp.com/"
+            ],
+            "js": [
+                "js/jquery-3.2.1.min.js",
+                "js/uppercase.js"
+            ]
+        }
+    ],
+    "icons": {
+        "128": "img/megaphone17-128.png"
+    },
+    "permissions": [],
+    "author": "Nahuel Barrios"
+}
