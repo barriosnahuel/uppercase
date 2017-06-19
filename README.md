@@ -1,6 +1,6 @@
 # Uppercase
 
-This extension has one simple feature: it transform to uppercase the first letter of the message you're writing. This is useful to simulate that you're on your phone instead of your computer.
+This extension has one simple feature: it transforms to uppercase the first letter of the message you're writing. This is useful to simulate that you're on your phone instead of your computer.
 
 ## Project status
 
