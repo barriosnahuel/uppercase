@@ -5,6 +5,7 @@ This extension has one simple feature: it transform to uppercase the first lette
 ## Project status
 
 [![version](https://img.shields.io/github/release/barriosnahuel/uppercase.svg)](https://chrome.google.com/webstore/detail/uppercase-whatsapp-with-c/fmiegbpfdanilaobmfojhinjpcpknddb)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/d/fmiegbpfdanilaobmfojhinjpcpknddb.svg)](https://chrome.google.com/webstore/detail/uppercase-whatsapp-with-c/fmiegbpfdanilaobmfojhinjpcpknddb)
 
 ## Installation
 
